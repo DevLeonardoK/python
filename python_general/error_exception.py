@@ -25,8 +25,8 @@ try: #try to execute
     numerator = int(input("Numerator: "))
     denominator = int(input("Denominator: "))
     result = numerator/denominator
-except: #exception
-    print("An error occurred")
+except Exception as exception: #exception
+    print(f"An error occurred -> {exception.__class__}")
 else: #success
     print(f"Result: {result}")
 finally: #success/exception - always happens
