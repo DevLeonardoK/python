@@ -1,4 +1,4 @@
-# This Python script demonstrates the correct way to manipulate files using manual open and using 'with open'.
+# This Python script demonstrates the correct way to manipulate files using manual open and using 'with open' and Path lib.
 # It also shows the difference in memory usage and processing compared to manually opening and closing files.
 
 #--IMPORTS--
