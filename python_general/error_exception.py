@@ -25,9 +25,15 @@ try: #try to execute
     numerator = int(input("Numerator: "))
     denominator = int(input("Denominator: "))
     result = numerator/denominator
-except Exception as exception: #exception
-    print(f"An error occurred -> {exception.__class__}")
+except (ValueError, TypeError):
+    print("Invalid input type")
+except ZeroDivisionError:
+    print("Division by zero (0) is not allowed")
+except KeyboardInterrupt:
+    print("Operation interrupted by user")
+except Exception as exception:
+    print(f"Exception cause:  {exception.__cause__}")
 else: #success
-    print(f"Result: {result}")
+    print(f"Result: {result:.1f}")
 finally: #success/exception - always happens
     print("come back soon")
