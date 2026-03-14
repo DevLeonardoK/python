@@ -11,18 +11,28 @@ file_path = "files/text_open_write_add.txt"
 #open,read - manual
 @profile
 def open_file_manual():
-    file = open(file_path, 'r')
-    content = file.read()
     
-    file.close()
-    return content
+    file_read = open(file_path, 'r')
+    content = file_read.read()
+    file_read.close()
+    
+    file_add = open(file_path, 'a')
+    content = content + "Hello 1"
+    file_add.write(content)
+    file_add.close()
+    return f"File content: {content}"
 
 #open, read - with
 @profile
 def open_file_with():
-    with open(file_path, 'r') as file:
-        content = file.read()
-        return content
+    
+    with open(file_path, 'r') as file_read:
+        content = file_read.read()
+    
+    with open(file_path, 'a') as file_add:
+        content = "\n" + content + " - Hello 2"
+        file_add.write(content)    
+        return f"File content: {content}"
 
 
 #Execution
