@@ -1,4 +1,4 @@
-# This Python script demonstrates the correct way to manipulate files using 'with'.
+# This Python script demonstrates the correct way to manipulate files using manual open and using 'with open'.
 # It also shows the difference in memory usage and processing compared to manually opening and closing files.
 
 #--IMPORTS--
@@ -6,13 +6,14 @@ from memory_profiler import profile, memory_usage
 
 
 #--LOGIC--
-file_path = "files/text_open_write_add_with.txt"
+file_path = "files/text_open_write_add.txt"
 
 #open,read - manual
 @profile
 def open_file_manual():
     file = open(file_path, 'r')
     content = file.read()
+    
     file.close()
     return content
 
