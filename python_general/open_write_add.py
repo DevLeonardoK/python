@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 #--LOGIC--
-file_path = "files/text_open_write_add.txt"
+file_path = "../files/text_open_write_add.txt"
 
 #open,read - manual
 @profile
