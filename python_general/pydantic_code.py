@@ -7,7 +7,7 @@
 
 from pydantic import BaseModel
 import pydantic
-from typing import Optional, List
+
 
 print(pydantic.__version__) #2.12.5
 
@@ -52,6 +52,7 @@ print(f"3 - model_json_schema() json more info-----> {car.model_json_schema()}\n
 
 
 #Nested models
+from typing import Optional, List
 print("#nested models ---- Optional and List\n")
 
 class Food(BaseModel):
@@ -115,3 +116,23 @@ owner = Owner(name="Andrew", email="andrewtok@hogm.com")
 restaurant_2 = Restaurant_2(name="Garden 67", owner=owner, address=address, employees=[employee_1,employee_2],number_of_seats=40, website="https://www.garden67food.com")
 
 print(f"{restaurant_2.model_dump_json()}\n")
+
+print("#field validator - single attribute\n")
+from pydantic import field_validator
+
+class Human(BaseModel):
+    name: str
+    age: int
+    
+    @field_validator("name")
+    def validate_atributes(v): #v = field_validator(v)
+        if ' ' not in v:
+            raise ValueError("The name must contain a space")
+        return v.upper()
+
+try:
+    human = Human(name="Leonardo",age=19)
+except Exception as e:
+    print(e) 
+else:
+    print(human)   
