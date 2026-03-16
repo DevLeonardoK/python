@@ -117,22 +117,54 @@ restaurant_2 = Restaurant_2(name="Garden 67", owner=owner, address=address, empl
 
 print(f"{restaurant_2.model_dump_json()}\n")
 
-print("#field validator - single attribute\n")
+print("#field_validator - single field\n")
 from pydantic import field_validator
 
 class Human(BaseModel):
     name: str
     age: int
     
-    @field_validator("name")
-    def validate_atributes(v): #v = field_validator(v)
+    @field_validator('name')
+    def validate_name(v): #v = field_validator(v)
         if ' ' not in v:
             raise ValueError("The name must contain a space")
         return v.upper()
 
 try:
-    human = Human(name="Leonardo",age=19)
+    human = Human(name="Leonardo ",age=19)
 except Exception as e:
     print(e) 
 else:
-    print(human)   
+    print(f"{human}\n")
+
+
+print("#field_validator - multiple fields")
+from pydantic import model_validator, ValidationError
+from typing import Any
+class Signup(BaseModel):
+    name: str
+    age: int
+
+    @model_validator(mode="before") #before validation/transform
+    @classmethod
+    def validate_data(cls, values: Any) -> Any:
+        if 'password' in values:
+            raise ValueError("Password should not be in the data")
+        if 'user' in values:
+            raise ValueError("User login should not be in the data")
+        return values
+    
+    @model_validator(mode="after")
+    def validate_object(self):
+        if ' ' not in self.name:
+            raise ValueError("The name must contain a space")
+        return self
+    
+try:
+    #case 1 signup = Signup(name="Leonardo",age=19, password="bluered123*")
+    #case 2
+        signup = Signup(name="Leonardo",age=19)
+except ValidationError as e:
+    print(e)
+else:
+    print(signup)
