@@ -138,7 +138,7 @@ else:
     print(f"{human}\n")
 
 
-print("#field_validator - multiple fields")
+print("#model_validator - multiple fields")
 from pydantic import model_validator, ValidationError
 from typing import Any
 class Signup(BaseModel):
@@ -172,7 +172,7 @@ else:
     
 #Field
 from uuid import uuid4
-print("#Exploring 'Field'")
+print("#Exploring 'Field'\n")
 
 class Human(BaseModel):
     id:int = Field(...,default_factory=lambda: uuid4().hex)
@@ -192,6 +192,27 @@ try:
 except ValidationError as e:
     print(e)
 else:
-    print(f"{object.model_dump_json(by_alias=True)}")  # using model_dump_json(by_alias=True), the result will use the alias names
+    print(f"{object.model_dump_json(by_alias=True)}\n")  # using model_dump_json(by_alias=True), the result will use the alias names
     
     # alias allows receiving API data using the alias name while using the internal variable name in the code
+    
+
+print("#Exploring 'Computed Fields ---> @property'\n")
+class Product(BaseModel):
+    name:str = Field(..., max_length=15)
+    price:float = Field(..., gt=0)
+    quantity:int = Field(..., ge=0)
+    
+    @property #mode after can use 'self'
+    def total(self):
+        sum_total = self.price * self.quantity
+        return sum_total
+
+try:    
+    product = Product(name="keyboard",price=20.0, quantity=5)
+except ValidationError as e:
+    print(e)
+else:
+    print(f"{product.model_dump_json()} \nTotal:{product.total}\n")
+
+    
