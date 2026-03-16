@@ -7,6 +7,8 @@
 
 from pydantic import BaseModel
 import pydantic
+from typing import Optional, List
+
 print(pydantic.__version__) #2.12.5
 
 #validation without pydantic
@@ -49,3 +51,19 @@ print(f"2 - model_dump_json() json -----> {car.model_dump_json()}\n")
 print(f"3 - model_json_schema() json more info-----> {car.model_json_schema()}\n")
 
 
+#Nested models
+
+class Food(BaseModel):
+    name:str
+    price:float
+    ingredients: Optional[List[str]] = None
+
+class Restaurant(BaseModel):
+    name:str
+    location:str
+    foods: List[Food]
+
+restaurant = Restaurant(name="Bistro 99",location="Brazil, Porto Alegre", foods=[{"name":"Steak","price":10.5,"ingredients":["steak","salt"]},
+        {"name":"potato","price":7.0,"ingredients":["potato","cheese"]}])
+
+print(restaurant.model_dump_json())
