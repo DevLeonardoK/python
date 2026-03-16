@@ -52,24 +52,29 @@ print(f"3 - model_json_schema() json more info-----> {car.model_json_schema()}\n
 
 
 #Nested models
+print("#nested models ---- Optional and List\n")
 
 class Food(BaseModel):
     name:str
     price:float
     ingredients: Optional[List[str]] = None
 
-class Restaurant(BaseModel):
+class Restaurant_1(BaseModel):
     name:str
     location:str
     foods: List[Food]
 
-restaurant = Restaurant(name="Bistro 99",location="Brazil, Porto Alegre", foods=[{"name":"Steak","price":10.5,"ingredients":["steak","salt"]},
+restaurant_1 = Restaurant_1(name="Bistro 99",location="Brazil, Porto Alegre", foods=[{"name":"Steak","price":10.5,"ingredients":["steak","salt"]},
         {"name":"potato","price":7.0,"ingredients":["potato","cheese"]}])
 
-print(restaurant.model_dump_json())
 
-#email, conlist, http url, positiveint,field
+print(f"{restaurant_1.model_dump_json()}\n")
+
+#Pydantic Types
+#Field, conlist, EmailStr, HttpUrl,PositiveInt
 #uv add pydantic[email]
+
+print("#Field, conlist, EmailStr, HttpUrl,PositiveInt \n")
 
 from pydantic import Field, conlist, EmailStr, HttpUrl,PositiveInt
 
@@ -88,8 +93,8 @@ class Owner(BaseModel):
     name: str
     email: EmailStr
 
-class Restaurant(BaseModel):
-    name: str = Field(..., pattern=r"^[a-zA-Z0-9-']+$") 
+class Restaurant_2(BaseModel):
+    name: str = Field(..., pattern=r"^[a-zA-Z0-9-' ]+$") 
     #pattern with raw string 'r'
     #... - not null field
     owner: Owner
@@ -98,3 +103,15 @@ class Restaurant(BaseModel):
     number_of_seats: PositiveInt
     website: HttpUrl
     
+    
+address = Address(street="Rua Aurelios Rom",city="Porto Alegre",state="Rio Grande do Oeste", zip_code=12654258)
+
+employee_1 = Employee(name="John",position="Supervisor",email="john@food.com")
+
+employee_2 = Employee(name="Marta",position="Assistant", email="martafood@web.com")
+
+owner = Owner(name="Andrew", email="andrewtok@hogm.com")
+
+restaurant_2 = Restaurant_2(name="Garden 67", owner=owner, address=address, employees=[employee_1,employee_2],number_of_seats=40, website="https://www.garden67food.com")
+
+print(f"{restaurant_2.model_dump_json()}\n")
