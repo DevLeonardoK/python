@@ -183,6 +183,15 @@ except Exception as e:
     print(e)
 else:
     print(f"id: {human.id}\n")
-
-
     
+class Object(BaseModel):
+    name: str = Field(..., max_length=5, alias="username")  # when using alias, the object must be initialized with the alias parameter
+    age: int = Field(default=19, alias="years_old", ge=19, le=20) #greater or equal / less or equal ---> list[gt,ge,lt,le]
+try:
+    object = Object(username="leo", years_old=20)
+except ValidationError as e:
+    print(e)
+else:
+    print(f"{object.model_dump_json(by_alias=True)}")  # using model_dump_json(by_alias=True), the result will use the alias names
+    
+    # alias allows receiving API data using the alias name while using the internal variable name in the code
