@@ -67,3 +67,34 @@ restaurant = Restaurant(name="Bistro 99",location="Brazil, Porto Alegre", foods=
         {"name":"potato","price":7.0,"ingredients":["potato","cheese"]}])
 
 print(restaurant.model_dump_json())
+
+#email, conlist, http url, positiveint,field
+#uv add pydantic[email]
+
+from pydantic import Field, conlist, EmailStr, HttpUrl,PositiveInt
+
+class Address(BaseModel):
+    street: str
+    city: str
+    state: str
+    zip_code: int
+
+class Employee(BaseModel):
+    name: str
+    position: str
+    email: EmailStr
+
+class Owner(BaseModel):
+    name: str
+    email: EmailStr
+
+class Restaurant(BaseModel):
+    name: str = Field(..., pattern=r"^[a-zA-Z0-9-']+$") 
+    #pattern with raw string 'r'
+    #... - not null field
+    owner: Owner
+    address: Address
+    employees: conlist(Employee, min_length=2)
+    number_of_seats: PositiveInt
+    website: HttpUrl
+    
