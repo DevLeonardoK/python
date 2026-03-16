@@ -198,13 +198,16 @@ else:
     
 
 print("#Exploring 'Computed Fields ---> @property'\n")
+from pydantic import computed_field
+
 class Product(BaseModel):
     name:str = Field(..., max_length=15)
     price:float = Field(..., gt=0)
     quantity:int = Field(..., ge=0)
     
+    @computed_field
     @property #mode after can use 'self'
-    def total(self):
+    def total(self) -> float:
         sum_total = self.price * self.quantity
         return sum_total
 
@@ -213,6 +216,6 @@ try:
 except ValidationError as e:
     print(e)
 else:
-    print(f"{product.model_dump_json()} \nTotal:{product.total}\n")
+    print(f"{product.model_dump_json()} \n")
 
     
