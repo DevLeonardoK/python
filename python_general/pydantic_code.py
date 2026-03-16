@@ -22,13 +22,10 @@ class User:
         self.name = name        
 try:
     user = User(age=19,name="Leonardo")
-    print(f"Name: {user.name} -- Age: {user.age}")
+    print("#validation without pydantic")
+    print(f"Name: {user.name} -- Age: {user.age}\n")
 except Exception as exception:
-    print(exception)
-
-
-print("\n")
-    
+    print(exception)    
     
 #validation with pydantic
 class Car(BaseModel):
@@ -37,6 +34,18 @@ class Car(BaseModel):
     
 try:
     car = Car(model="Fiat Uno", year='1996')
-    print(f"Model type: {type(car.model).__name__} \n Year type: {type(car.year).__name__}")
+    print("#validation with pydantic")
+    print(f"Model type: {type(car.model).__name__} \n Year type: {type(car.year).__name__}\n")
 except Exception as exception:
     print(exception)
+
+#model fields – explicitly passed parameters
+print(f"#model fields – explicitly passed parameters \n {car.model_fields_set}\n")
+
+#helper methods - json
+print("#helper methods - json \n")
+print(f"1 - model_dump() dictionary-----> {car.model_dump()}\n")
+print(f"2 - model_dump_json() json -----> {car.model_dump_json()}\n")
+print(f"3 - model_json_schema() json more info-----> {car.model_json_schema()}\n")
+
+
