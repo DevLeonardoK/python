@@ -167,4 +167,22 @@ try:
 except ValidationError as e:
     print(e)
 else:
-    print(signup)
+    print(f"{signup}\n")
+    
+    
+#Field
+from uuid import uuid4
+print("#Exploring 'Field'")
+
+class Human(BaseModel):
+    id:int = Field(...,default_factory=lambda: uuid4().hex)
+
+try:
+    human = Human()
+except Exception as e:
+    print(e)
+else:
+    print(f"id: {human.id}\n")
+
+
+    
