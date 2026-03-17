@@ -269,18 +269,26 @@ else:
 
 
 #using pydantic_settings - env - api
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic import SecretStr,AliasChoices
 from dotenv import load_dotenv
 
-load_dotenv()
+#load_dotenv()
+
 
 class Request(BaseSettings):
+    model_config = SettingsConfigDict(env_file='.env', extra='ignore')
     id:str = Field(default_factory=lambda: uuid4().hex)
-    api_key:str = Field(alias='MY_API_KEY')
+    #api_key:str = Field(alias='MY_API_KEY')
+    
+    #using validation alias & alias choice --> SecretStr (to hide api token in exceptions)
+    api_key: SecretStr = Field(alias='MY_API_KEY', validation_alias=AliasChoices('my_api_json'))
 
 try:
-    request = Request()
+    request_json = {"my_api_json":"123abc123abc123abc"}
+    request = Request.model_validate(request_json)
 except Exception as e:
+    #print(f"Please verify your enviroment file and variable names \n Class error: {e.__class__}")
     print(e)
 else:
-    print(f"{request.model_dump()}\n")
+    print(f"{request.model_dump_json()}\n api_key: {request.api_key.get_secret_value()}")
