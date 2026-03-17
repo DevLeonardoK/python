@@ -238,3 +238,32 @@ except Exception as e:
 else:
     print(f"{keyboard_1}\n{keyboard_2}\n")    
 
+
+#strict mode
+print("#strict mode")
+
+class Animal(BaseModel):
+    name:str = Field(...,description="Animal name", pattern=r'^[a-zA-Z ]+$')
+    age: int = Field(..., ge=0, le=200)
+    color: str = Field(...,description="Animal color")
+
+    @field_validator("name")
+    @classmethod
+    def validate_name(cls, name):
+        if ' ' not in name:
+            raise ValueError("Animal name must contain a space")
+        return name.upper()
+
+try:
+    
+    animal_json ={"name":"Lion bird","age":23,"color":"black and white"}
+    #using wrapper
+    #animal = Animal(**animal_json)
+    
+    #using model_validate - execute field_validator/model_validator
+    animal = Animal.model_validate(animal_json, strict=True)
+except ValidationError as e:
+    print(e)
+else:
+    print(f"{animal.model_dump_json()}\n")
+    
