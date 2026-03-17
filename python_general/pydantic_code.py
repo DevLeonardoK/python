@@ -219,3 +219,22 @@ else:
     print(f"{product.model_dump_json()} \n")
 
     
+#dataclass
+print("#using dataclass \n")
+
+from dataclasses import dataclass, field
+
+@dataclass
+class Keyboard():
+    name:str = field(default="keyboard")
+    brand:str = field(default="default")
+    length: int = field(default=0)
+
+try:
+    keyboard_1 = Keyboard(name="Fuji",brand="Razer", length="10")
+    keyboard_2 = Keyboard()
+except Exception as e:
+    print(e)
+else:
+    print(f"{keyboard_1}\n{keyboard_2}\n")    
+
