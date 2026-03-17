@@ -266,4 +266,21 @@ except ValidationError as e:
     print(e)
 else:
     print(f"{animal.model_dump_json()}\n")
-    
+
+
+#using pydantic_settings - env - api
+from pydantic_settings import BaseSettings
+from dotenv import load_dotenv
+
+load_dotenv()
+
+class Request(BaseSettings):
+    id:str = Field(default_factory=lambda: uuid4().hex)
+    api_key:str = Field(alias='MY_API_KEY')
+
+try:
+    request = Request()
+except Exception as e:
+    print(e)
+else:
+    print(f"{request.model_dump()}\n")
