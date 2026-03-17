@@ -291,4 +291,4 @@ except Exception as e:
     #print(f"Please verify your enviroment file and variable names \n Class error: {e.__class__}")
     print(e)
 else:
-    print(f"{request.model_dump_json()}\n api_key: {request.api_key.get_secret_value()}")
+    print(f"{request.model_dump_json(by_alias=True)}\n api_key: {request.api_key.get_secret_value()}")
