@@ -1,0 +1,301 @@
+id,name,age,department,role,city,salary,years_at_company,performance_rating,remote_work
+1,Uma Brown,39,Engineering,Senior Engineer,Chicago,,18,1.3,No
+2,Henry Martin,23,Support,Specialist,Atlanta,99543.18,8,,No
+3,Zach Garcia,43,IT,Analyst,Austin,66955.2,4,1.4,Yes
+4,Iris Johnson,56,Legal,Senior Engineer,Miami,49355.01,18,2.2,Hybrid
+5,Sam Martinez,24,Marketing,Senior Engineer,Seattle,111045.28,8,4.5,No
+6,Leo Garcia,44,Operations,Senior Engineer,Seattle,59093.31,20,3.5,Hybrid
+7,Mia Lopez,36,Design,Manager,New York,113730.64,2,4.2,No
+8,Sam Anderson,53,HR,Team Lead,Denver,80497.67,9,1.6,Hybrid
+9,Sam Hernandez,47,Support,Associate,Chicago,76629.59,16,1.4,Yes
+10,Frank Hernandez,26,Support,Coordinator,Dallas,79248.24,17,,Hybrid
+11,Xander Brown,39,Design,Senior Engineer,Boston,,10,2.7,No
+12,Xander Lopez,33,Design,Director,San Francisco,93383.39,17,3.4,Yes
+13,Yara Martin,60,Engineering,Senior Engineer,New York,72277.95,12,4.5,No
+14,Sam Williams,53,Marketing,Team Lead,Atlanta,128842.67,5,3.6,Hybrid
+15,Tina Hernandez,56,HR,Director,Austin,121855.5,13,5.0,Hybrid
+16,Olivia Brown,36,HR,Consultant,New York,,18,1.9,Yes
+17,Bob Davis,24,Marketing,Associate,San Francisco,133858.07,8,2.1,No
+18,Derek White,52,Support,Specialist,Denver,62944.68,7,1.4,Hybrid
+19,Olivia Johnson,25,Marketing,Senior Engineer,Boston,81301.45,8,1.8,Hybrid
+20,Iris Moore,26,HR,Senior Engineer,Atlanta,85960.04,2,3.6,Hybrid
+21,Derek Davis,48,Sales,Specialist,Austin,90848.73,2,1.7,Yes
+22,Zach Moore,49,Finance,Coordinator,Atlanta,115108.02,5,1.8,Yes
+23,Rachel Johnson,25,Operations,Associate,Denver,40766.37,17,1.6,Hybrid
+24,Tina Williams,47,HR,Manager,Dallas,48786.96,19,3.4,Hybrid
+25,Sam Martin,38,Operations,Manager,Boston,58489.81,9,2.6,Hybrid
+26,Derek Williams,51,Engineering,Senior Engineer,Dallas,106433.31,3,3.2,Hybrid
+27,Chloe Williams,45,HR,Associate,Denver,67773.55,10,3.4,Hybrid
+28,Rachel Wilson,30,Marketing,Associate,San Francisco,65413.58,5,2.1,Hybrid
+29,Victor Lopez,53,Design,Senior Engineer,New York,,14,4.3,Yes
+30,Uma Lopez,50,Sales,Associate,Miami,98443.25,1,1.4,Hybrid
+31,Amy Taylor,57,Support,Junior Engineer,Chicago,52030.79,10,2.5,Yes
+32,Henry Brown,57,Operations,Consultant,Miami,136675.49,5,4.7,Yes
+33,Zach Garcia,23,IT,Specialist,Boston,55626.48,8,2.1,Hybrid
+34,Brian Jackson,34,HR,Analyst,Denver,128907.46,10,4.3,Yes
+35,Mia Anderson,26,Finance,Analyst,Seattle,146192.25,17,,Hybrid
+36,Chloe Lopez,59,Sales,Junior Engineer,Seattle,145691.45,4,3.4,No
+37,Tina Martin,46,Marketing,Director,Austin,138443.04,2,3.8,Yes
+38,Victor Martinez,49,Operations,Consultant,Boston,43046.99,11,3.7,Yes
+39,Jack Hernandez,47,Operations,Team Lead,Atlanta,115178.97,7,2.7,No
+40,Tina White,47,Finance,Director,New York,98012.78,10,1.8,Hybrid
+41,Olivia Moore,54,HR,Senior Engineer,Chicago,89416.41,10,3.1,Hybrid
+42,Yara Davis,36,Finance,Junior Engineer,Chicago,127754.73,2,2.0,No
+43,Olivia Hernandez,34,Support,Coordinator,Miami,117609.78,13,2.0,Hybrid
+44,Brian Brown,36,IT,Coordinator,Atlanta,55226.97,2,3.2,Yes
+45,Victor Martin,60,Design,Consultant,Denver,71489.27,17,2.7,Hybrid
+46,Brian Jackson,38,Legal,Associate,Seattle,121454.33,16,3.5,No
+47,Henry Lopez,42,Operations,Team Lead,San Francisco,137698.09,5,1.9,Hybrid
+48,Noah Hernandez,56,Operations,Manager,New York,88581.29,14,,Hybrid
+49,Chloe White,52,IT,Director,Boston,35678.05,13,4.4,No
+50,Zach Harris,53,HR,Coordinator,Miami,60233.49,1,2.6,Hybrid
+51,Frank Moore,56,Sales,Consultant,Miami,38101.14,19,3.7,Yes
+52,Olivia Garcia,38,Engineering,Coordinator,Austin,78596.94,11,2.4,No
+53,Noah Lopez,52,Marketing,Junior Engineer,Atlanta,37229.08,12,1.9,Yes
+54,Yara Smith,34,HR,Team Lead,Dallas,131511.32,8,1.5,Hybrid
+55,Olivia Lopez,32,Operations,Team Lead,San Francisco,104677.66,10,1.4,Yes
+56,Derek Thomas,34,IT,Senior Engineer,Austin,43739.59,10,4.4,Hybrid
+57,Sam Johnson,56,Operations,Senior Engineer,Boston,84263.47,17,3.6,Yes
+58,David Hernandez,51,Operations,Team Lead,Miami,116340.49,17,4.9,No
+59,Yara Jackson,49,Legal,Director,Dallas,129959.48,11,4.4,Yes
+60,Yara Moore,46,Support,Analyst,Denver,73685.61,6,3.0,No
+61,Chloe Harris,57,Finance,Senior Engineer,Austin,36167.38,8,3.9,No
+62,Paul Jackson,23,Legal,Specialist,Austin,45701.14,8,2.2,Hybrid
+63,Leo Hernandez,43,Design,Director,Denver,75458.21,10,2.0,Yes
+64,Xander Lee,34,Sales,Director,Denver,59884.23,19,4.9,Hybrid
+65,Amy Martinez,36,Finance,Junior Engineer,Seattle,76501.32,18,1.5,Yes
+66,Wendy Jones,28,Legal,Director,Dallas,135362.77,16,2.9,No
+67,Brian Jackson,26,Marketing,Consultant,San Francisco,81081.36,2,1.6,Hybrid
+68,Henry Brown,48,Design,Manager,Dallas,104726.53,17,2.5,No
+69,Noah Wilson,25,Support,Manager,San Francisco,105107.55,7,2.1,Yes
+70,Carol Garcia,48,Engineering,Coordinator,Dallas,86807.93,10,1.1,No
+71,Olivia Williams,38,HR,Manager,Dallas,125600.22,14,1.5,Yes
+72,Amy Jones,25,Marketing,Consultant,Seattle,54081.12,19,4.7,No
+73,Wendy Thomas,54,Finance,Senior Engineer,Denver,97097.88,20,1.2,No
+74,Alice Williams,58,HR,Director,New York,102519.14,19,1.2,Yes
+75,Derek Lopez,59,Sales,Senior Engineer,Denver,85126.77,16,2.4,No
+76,Frank Anderson,53,IT,Associate,Miami,68145.05,2,2.8,No
+77,Yara Thomas,22,Design,Coordinator,Atlanta,110630.94,14,1.2,Hybrid
+78,Uma Moore,35,Engineering,Director,Chicago,65711.47,15,4.5,No
+79,Tina Davis,41,Sales,Specialist,Atlanta,98346.49,3,1.9,Yes
+80,Amy Jones,40,Legal,Specialist,Seattle,93520.28,16,4.9,Yes
+81,Grace Harris,30,Design,Specialist,Seattle,134363.1,11,,Hybrid
+82,Xander Wilson,59,Support,Team Lead,Denver,149873.77,15,3.2,No
+83,Mia Moore,34,Operations,Consultant,Austin,,13,1.9,No
+84,Wendy Thomas,31,IT,Team Lead,New York,91962.79,17,4.9,No
+85,Olivia Brown,51,Design,Specialist,Chicago,36764.97,5,1.3,No
+86,Uma Williams,56,Operations,Coordinator,Boston,78701.08,18,1.1,Yes
+87,Jack Davis,49,Marketing,Coordinator,San Francisco,,6,3.8,Yes
+88,Jack Taylor,49,Operations,Specialist,Atlanta,51740.53,19,3.7,Yes
+89,Brian Thomas,37,Support,Team Lead,Dallas,92231.73,8,2.8,No
+90,Chloe Moore,56,Finance,Analyst,Denver,53167.2,19,2.2,No
+91,Jack Martinez,52,IT,Consultant,Miami,47265.13,12,3.3,Hybrid
+92,Victor Thomas,22,Finance,Consultant,New York,100081.84,16,4.3,No
+93,Zach Taylor,34,HR,Senior Engineer,Chicago,,2,2.2,No
+94,Emma Williams,42,Finance,Manager,Chicago,120960.3,5,4.1,No
+95,Amy Garcia,52,Finance,Analyst,Seattle,146249.17,4,2.9,Yes
+96,Brian Thomas,45,Design,Junior Engineer,Miami,45384.83,9,3.1,No
+97,Iris White,45,IT,Coordinator,Austin,47459.8,1,3.5,Hybrid
+98,Uma Williams,41,Legal,Team Lead,San Francisco,109662.54,2,4.8,No
+99,Henry Lee,46,Sales,Specialist,Atlanta,87169.03,19,4.0,Yes
+100,Amy Jackson,48,Support,Junior Engineer,Seattle,142991.1,12,1.9,No
+101,David Taylor,44,Design,Manager,Seattle,41963.26,4,4.8,No
+102,Uma Harris,25,Engineering,Team Lead,Austin,125481.38,19,1.8,Hybrid
+103,Brian Davis,31,Operations,Junior Engineer,Dallas,125694.03,9,4.4,Yes
+104,Zach Garcia,23,Marketing,Manager,Boston,50157.37,19,2.3,Yes
+105,Noah Martin,26,Marketing,Associate,Boston,89768.29,19,1.4,Hybrid
+106,Xander Martin,51,Finance,Junior Engineer,New York,108984.18,16,4.4,No
+107,Derek Moore,27,Marketing,Senior Engineer,Chicago,72042.86,5,2.1,Hybrid
+108,Mia Harris,40,Design,Specialist,Dallas,87177.27,4,4.2,Yes
+109,Yara Lee,49,HR,Specialist,Austin,86928.82,11,4.3,No
+110,Noah Anderson,45,Finance,Senior Engineer,Denver,144663.14,3,4.3,Yes
+111,Leo Jones,25,Design,Associate,Atlanta,102443.48,11,3.7,No
+112,Yara Hernandez,40,Engineering,Senior Engineer,Boston,104047.16,19,3.0,Yes
+113,David Taylor,45,Design,Consultant,Seattle,48211.81,8,4.2,Hybrid
+114,Tina Lee,60,Engineering,Junior Engineer,Seattle,141844.69,6,2.1,No
+115,Frank Jones,47,Support,Senior Engineer,New York,43002.32,17,1.9,No
+116,Jack Anderson,60,Support,Team Lead,New York,44770.06,6,4.0,Yes
+117,Victor Hernandez,60,Legal,Manager,Seattle,85835.08,17,1.5,No
+118,Sam Jackson,41,Design,Consultant,Miami,40223.0,2,1.0,No
+119,Yara Lopez,42,Finance,Specialist,Denver,48798.2,6,1.5,Hybrid
+120,Amy Taylor,47,Marketing,Specialist,New York,134102.9,1,2.8,Yes
+121,Sam Thomas,40,IT,Analyst,New York,48244.94,6,4.2,Hybrid
+122,Leo Williams,28,IT,Specialist,Dallas,62981.39,17,1.3,No
+123,Yara Garcia,54,Marketing,Associate,Atlanta,107820.84,7,4.6,No
+124,Uma Jones,28,HR,Team Lead,Austin,,20,1.6,Hybrid
+125,Uma Jackson,58,Legal,Consultant,Denver,122385.87,20,2.3,Hybrid
+126,Paul Moore,39,Finance,Associate,Boston,,3,2.2,No
+127,Jack Williams,60,Marketing,Consultant,Denver,93312.8,18,4.8,Hybrid
+128,Zach White,42,HR,Team Lead,Atlanta,104575.67,2,2.8,No
+129,Uma Garcia,37,Engineering,Associate,Denver,116376.5,17,3.4,No
+130,Noah Anderson,25,Support,Senior Engineer,Boston,125761.1,11,1.4,Hybrid
+131,Brian Harris,43,Sales,Analyst,Chicago,44372.73,10,4.9,Hybrid
+132,Wendy Williams,57,Finance,Team Lead,Boston,78318.12,17,1.4,Hybrid
+133,Leo Wilson,35,Sales,Manager,Denver,,8,5.0,Yes
+134,David Martin,55,Design,Consultant,Boston,39340.96,5,3.4,Yes
+135,Yara Harris,50,Sales,Manager,Boston,40024.63,15,3.4,Hybrid
+136,Henry Wilson,34,Legal,Coordinator,Dallas,77301.71,15,4.1,No
+137,Frank Martinez,30,Support,Coordinator,New York,135395.22,12,3.2,Yes
+138,David Wilson,32,Marketing,Team Lead,Atlanta,66371.0,14,1.4,Yes
+139,Derek Smith,25,IT,Manager,Boston,80592.21,13,5.0,No
+140,David Anderson,30,Sales,Team Lead,Denver,39404.87,16,,Yes
+141,Grace Jones,60,Design,Director,San Francisco,95693.72,8,2.2,Yes
+142,Tina Moore,29,Marketing,Consultant,Denver,131219.09,18,1.1,Hybrid
+143,Jack Hernandez,44,Engineering,Team Lead,Miami,,3,3.1,No
+144,Quinn Martin,23,Design,Junior Engineer,Denver,79902.18,13,4.9,No
+145,Carol Taylor,28,HR,Team Lead,Boston,123722.66,2,2.4,No
+146,Yara Moore,33,Legal,Coordinator,San Francisco,128322.23,2,2.2,Yes
+147,Karen Wilson,47,Design,Coordinator,Atlanta,148749.11,9,1.1,Hybrid
+148,Yara Johnson,39,Operations,Specialist,Boston,49314.63,13,4.0,No
+149,Wendy Jackson,55,Operations,Specialist,San Francisco,65672.88,3,2.7,Yes
+150,Carol Anderson,41,Finance,Team Lead,Miami,86280.31,15,2.4,Yes
+151,Tina Hernandez,25,Finance,Analyst,Miami,43629.73,17,,Hybrid
+152,Brian Harris,24,Legal,Analyst,Austin,,12,2.5,Hybrid
+153,Olivia Taylor,50,Operations,Team Lead,Dallas,122754.71,17,2.5,No
+154,David Smith,53,Sales,Senior Engineer,Atlanta,94540.71,9,4.1,Hybrid
+155,Jack Jackson,29,HR,Coordinator,San Francisco,50608.77,6,4.6,No
+156,Brian Anderson,26,Operations,Director,Seattle,98249.67,6,3.8,Hybrid
+157,Quinn Davis,34,Marketing,Coordinator,Austin,126087.55,1,2.4,Hybrid
+158,Rachel Jones,27,Support,Coordinator,Miami,42561.03,17,2.6,No
+159,Karen Williams,51,Legal,Team Lead,Boston,113212.53,18,3.6,Yes
+160,Quinn Johnson,55,Marketing,Team Lead,Chicago,52596.78,11,4.7,Yes
+161,Chloe Wilson,38,Marketing,Director,Atlanta,57574.72,5,3.5,Hybrid
+162,Frank White,31,Support,Consultant,Dallas,,11,4.4,Hybrid
+163,Carol Johnson,38,Support,Specialist,Dallas,109879.95,20,3.6,No
+164,Uma Wilson,37,Legal,Director,Miami,127539.14,15,1.3,Yes
+165,Olivia Martinez,60,Operations,Analyst,Boston,51521.9,13,1.5,No
+166,Henry Moore,39,Marketing,Senior Engineer,Chicago,86703.54,2,2.2,No
+167,Brian Garcia,58,Operations,Team Lead,Austin,117929.77,16,5.0,No
+168,Alice Williams,54,IT,Manager,Austin,87581.52,19,2.4,Yes
+169,Amy Jackson,56,Finance,Specialist,San Francisco,35940.4,5,4.5,Hybrid
+170,Bob Thomas,58,Engineering,Associate,Boston,99608.94,10,1.3,Hybrid
+171,Amy Harris,29,Support,Specialist,San Francisco,49796.29,12,4.2,No
+172,Emma Martinez,54,Support,Junior Engineer,New York,81159.51,2,1.5,No
+173,Emma Harris,30,Design,Analyst,Dallas,72716.07,6,2.6,Hybrid
+174,Karen Martin,56,Design,Director,Dallas,91332.36,16,4.3,No
+175,Noah White,23,Finance,Consultant,Seattle,103644.61,19,1.9,Yes
+176,Uma Harris,31,IT,Junior Engineer,Austin,129491.05,19,4.8,Yes
+177,Noah Jones,35,IT,Coordinator,Dallas,82193.4,2,3.8,Hybrid
+178,Victor Jackson,46,Design,Coordinator,Chicago,71081.55,18,2.4,No
+179,Victor Lopez,52,Support,Director,Austin,57110.38,18,2.2,No
+180,Wendy Jackson,52,Operations,Director,Seattle,75112.37,4,3.3,Hybrid
+181,Amy Taylor,40,Sales,Analyst,San Francisco,39837.65,15,3.6,Hybrid
+182,Rachel Lopez,39,Design,Consultant,Dallas,50786.39,8,2.0,Hybrid
+183,Henry Johnson,48,Marketing,Senior Engineer,Denver,72983.77,5,1.0,Hybrid
+184,Uma Jackson,34,Legal,Analyst,Seattle,121929.77,10,3.6,Yes
+185,Xander Johnson,48,Sales,Junior Engineer,Chicago,136458.17,13,4.2,Yes
+186,Derek Wilson,22,Engineering,Senior Engineer,Dallas,69315.1,11,2.1,Hybrid
+187,Emma Martin,39,Legal,Analyst,San Francisco,57173.31,6,3.9,Hybrid
+188,Xander Anderson,58,Finance,Team Lead,Austin,112556.13,20,4.4,No
+189,Carol Thomas,33,Marketing,Analyst,Denver,147893.8,8,1.0,No
+190,Karen Wilson,58,Support,Manager,Boston,36315.11,2,3.7,No
+191,Quinn Wilson,40,Marketing,Manager,Austin,77267.55,5,2.9,No
+192,Noah Lee,56,Legal,Manager,Austin,127229.42,20,4.5,Yes
+193,Leo Williams,29,Support,Associate,Atlanta,42102.18,7,3.3,Yes
+194,Olivia Brown,59,HR,Coordinator,Atlanta,91215.22,2,2.8,Hybrid
+195,Rachel Moore,23,Finance,Manager,New York,80534.1,19,1.3,No
+196,Bob Williams,24,Legal,Team Lead,Chicago,68015.43,14,2.5,No
+197,Mia Thomas,56,Marketing,Senior Engineer,Boston,50293.83,6,5.0,No
+198,Henry Smith,41,Engineering,Specialist,Atlanta,88245.45,18,2.5,Yes
+199,Iris Martinez,24,Marketing,Consultant,Miami,128089.99,1,,Yes
+200,Tina Johnson,24,HR,Associate,Austin,81260.52,7,4.0,Yes
+201,Henry White,58,Operations,Manager,Boston,103760.53,10,4.5,Hybrid
+202,Iris Johnson,59,Design,Specialist,Chicago,136167.1,18,3.0,No
+203,Zach Martin,48,Operations,Specialist,Seattle,81949.81,6,4.0,No
+204,Brian Jones,25,Legal,Associate,Miami,99674.38,17,1.5,Yes
+205,Carol Moore,27,Operations,Junior Engineer,Austin,96598.09,9,2.5,Hybrid
+206,Grace White,35,Design,Director,Boston,90130.33,1,1.8,Yes
+207,Yara Jackson,60,HR,Manager,Miami,115933.39,18,2.3,No
+208,Leo Wilson,45,Finance,Coordinator,Denver,93973.9,4,4.2,Hybrid
+209,Derek Martinez,42,Operations,Manager,Dallas,82601.97,5,1.1,Hybrid
+210,Noah Wilson,34,Sales,Consultant,Miami,72934.51,8,3.0,Hybrid
+211,Yara Jackson,51,Legal,Team Lead,Boston,54346.87,5,3.9,No
+212,Uma Johnson,24,Design,Junior Engineer,San Francisco,131492.88,1,2.6,Hybrid
+213,Alice Martinez,51,Design,Consultant,Dallas,,16,3.6,Yes
+214,Alice Smith,39,Design,Junior Engineer,Seattle,96609.88,17,4.3,Hybrid
+215,Frank Brown,55,Marketing,Consultant,Austin,52123.21,17,2.0,No
+216,Leo Thomas,58,Legal,Director,Austin,62968.91,3,3.6,Hybrid
+217,Mia Thomas,52,Design,Team Lead,New York,41453.22,3,3.0,No
+218,Brian Brown,24,Design,Coordinator,Dallas,61423.15,9,1.2,Yes
+219,Rachel White,33,Engineering,Junior Engineer,Boston,141808.13,7,3.3,Hybrid
+220,Jack Garcia,37,Support,Associate,Miami,100170.03,11,2.5,Hybrid
+221,Xander Williams,44,Design,Manager,Miami,41175.09,3,2.4,Hybrid
+222,Yara Anderson,39,Engineering,Coordinator,Denver,125108.04,8,2.4,No
+223,Victor Thomas,40,Marketing,Senior Engineer,San Francisco,126776.34,9,1.6,Hybrid
+224,Mia Anderson,28,Operations,Coordinator,Seattle,45524.85,12,4.0,Yes
+225,Olivia Lee,54,Design,Senior Engineer,New York,81925.08,12,3.2,Hybrid
+226,Mia Smith,48,Finance,Associate,San Francisco,79596.95,8,3.3,Yes
+227,Iris Wilson,53,Finance,Specialist,Chicago,51782.5,9,2.7,No
+228,Henry Jackson,34,Support,Director,Chicago,87654.09,1,4.8,No
+229,Brian Anderson,43,Legal,Team Lead,Dallas,84520.87,10,2.3,Hybrid
+230,Mia Anderson,53,Finance,Analyst,Austin,146292.75,13,2.1,No
+231,Grace White,33,Design,Junior Engineer,Atlanta,113396.95,15,4.8,Yes
+232,Wendy Williams,53,IT,Manager,Seattle,51005.6,9,3.6,Hybrid
+233,Olivia Harris,59,Legal,Specialist,Atlanta,81092.59,18,1.1,No
+234,Tina Williams,37,Marketing,Team Lead,Boston,110624.19,20,1.2,Hybrid
+235,Yara Anderson,28,IT,Manager,Seattle,36212.99,17,4.0,Hybrid
+236,Olivia Taylor,51,IT,Associate,Dallas,123819.36,5,2.4,Yes
+237,Derek Williams,31,Marketing,Coordinator,Boston,75057.8,7,3.1,No
+238,Wendy Moore,26,Operations,Junior Engineer,San Francisco,69530.37,11,3.6,Hybrid
+239,Xander Davis,33,Design,Associate,Boston,98469.68,14,4.8,Yes
+240,Frank Hernandez,23,IT,Coordinator,Austin,119799.66,19,2.7,Yes
+241,Yara Williams,28,Support,Team Lead,Atlanta,126942.77,12,2.3,No
+242,Paul Martin,60,Operations,Consultant,Miami,79693.52,4,2.4,No
+243,Wendy Wilson,59,Support,Analyst,Chicago,44746.48,4,2.0,Yes
+244,Quinn Thomas,60,IT,Specialist,Miami,50854.74,6,2.9,Hybrid
+245,Frank Lee,53,Sales,Analyst,Chicago,68216.0,15,3.5,No
+246,Grace Thomas,54,Design,Coordinator,Miami,110103.02,14,3.8,No
+247,Alice Davis,24,Finance,Director,Atlanta,66608.09,6,4.1,Hybrid
+248,Rachel Martin,58,Marketing,Analyst,Atlanta,48133.76,18,4.3,Yes
+249,Grace Hernandez,37,Marketing,Coordinator,New York,69236.53,9,2.4,Yes
+250,Yara Davis,59,HR,Specialist,Dallas,114250.36,6,3.5,Yes
+251,Sam Taylor,39,Design,Analyst,Chicago,103638.63,10,2.2,No
+252,Chloe Brown,48,Sales,Team Lead,Seattle,140658.4,5,2.0,Hybrid
+253,Amy Thomas,31,Legal,Specialist,Seattle,101403.94,13,2.8,Hybrid
+254,Mia Martin,45,Finance,Analyst,Denver,87290.0,19,1.0,Hybrid
+255,Uma Taylor,56,Marketing,Manager,Miami,80737.32,16,2.1,No
+256,Sam Jackson,25,Operations,Junior Engineer,Denver,40283.44,4,,Yes
+257,Noah Martinez,41,Sales,Senior Engineer,Seattle,53282.41,12,2.0,No
+258,Bob Thomas,36,Finance,Senior Engineer,San Francisco,84361.56,1,1.9,Yes
+259,Victor Moore,22,Engineering,Specialist,San Francisco,114993.67,5,2.9,Yes
+260,David Brown,45,Operations,Specialist,Chicago,136313.73,5,3.6,Hybrid
+261,Alice Harris,50,Sales,Team Lead,Austin,75386.59,14,3.5,No
+262,David Jones,59,Marketing,Specialist,Boston,118951.05,11,4.2,Yes
+263,Rachel Harris,60,Support,Director,New York,67765.89,7,3.1,Hybrid
+264,Uma Johnson,53,HR,Coordinator,Austin,79376.84,20,1.3,Yes
+265,Emma Thomas,48,Support,Coordinator,Chicago,,3,1.1,Yes
+266,Derek Johnson,54,IT,Specialist,Atlanta,67946.1,14,3.8,Yes
+267,Emma Lopez,41,Marketing,Team Lead,Austin,44087.48,18,2.3,Hybrid
+268,Victor Williams,49,Finance,Junior Engineer,Austin,118945.21,8,1.3,No
+269,Bob Wilson,29,Sales,Junior Engineer,Chicago,36456.47,6,3.0,No
+270,Xander Lopez,45,Sales,Senior Engineer,Seattle,49597.02,1,2.3,No
+271,Wendy White,53,Marketing,Junior Engineer,Boston,87347.74,16,4.4,Yes
+272,David White,36,Marketing,Junior Engineer,New York,120189.7,1,2.0,No
+273,Frank Johnson,48,Design,Specialist,Austin,60819.26,11,2.1,Yes
+274,Victor Johnson,36,Sales,Specialist,New York,127498.87,3,4.5,No
+275,Carol Lee,22,Legal,Consultant,Seattle,77425.73,10,4.0,Yes
+276,Paul Martinez,37,Design,Junior Engineer,Miami,52315.13,8,3.2,Hybrid
+277,Karen Smith,41,IT,Manager,Atlanta,46954.14,14,3.0,Yes
+278,Iris Williams,36,Engineering,Specialist,Atlanta,138188.06,12,2.8,Hybrid
+279,Emma Thomas,59,Marketing,Team Lead,Miami,100299.38,8,2.2,No
+280,Amy Anderson,50,Operations,Manager,San Francisco,66274.93,5,4.1,Hybrid
+281,Olivia Moore,48,Operations,Manager,Boston,48884.72,15,2.2,No
+282,Zach Wilson,24,Support,Team Lead,Boston,59727.39,3,,No
+283,Jack Lopez,23,Sales,Associate,Denver,144491.11,18,2.0,No
+284,David Smith,36,Engineering,Analyst,Miami,50032.25,3,3.3,No
+285,Carol Martinez,30,Legal,Senior Engineer,Boston,45577.54,2,4.8,Yes
+286,Amy Thomas,23,Legal,Team Lead,Miami,79013.89,12,1.9,Yes
+287,Emma Johnson,37,Support,Specialist,Denver,109437.02,18,2.9,Yes
+288,Grace Martin,56,HR,Analyst,Miami,126407.32,16,3.2,No
+289,Karen Thomas,33,Finance,Manager,Dallas,,1,4.6,No
+290,Quinn Taylor,36,Support,Manager,San Francisco,,8,2.1,Hybrid
+291,Henry White,44,IT,Team Lead,Chicago,142548.69,8,3.4,Hybrid
+292,Alice Taylor,58,Support,Coordinator,Austin,,18,2.2,No
+293,Tina Davis,55,Engineering,Consultant,Boston,89968.73,7,4.2,No
+294,Brian Anderson,23,Engineering,Senior Engineer,Chicago,51986.88,17,4.4,Yes
+295,Mia White,43,Marketing,Team Lead,Chicago,69702.99,14,4.2,No
+296,Rachel Harris,36,Operations,Specialist,Chicago,111536.14,10,3.9,No
+297,Wendy White,58,IT,Analyst,Dallas,38724.02,20,1.9,Hybrid
+298,Karen Williams,44,HR,Senior Engineer,Chicago,147973.66,11,2.8,No
+299,Leo Lopez,22,Marketing,Specialist,Denver,40536.96,6,4.5,No
+300,Mia Brown,58,Legal,Team Lead,Austin,109861.5,15,1.3,Yes
